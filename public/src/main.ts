@@ -16,7 +16,7 @@ camera.position.setZ(30);
 camera.position.setY(10);
 
 //Shapes
-scene.add(...Array(300).fill().map(() => addStar()));
+scene.add(...Array(300).fill(300).map(() => addStar()));
 const geometry = new Three.TorusGeometry(10, 3, 16, 100), material = new Three.MeshStandardMaterial({ color: 0x330066, wireframe: false });
 const torus = new Three.Mesh(geometry, material);
 scene.add(torus);
